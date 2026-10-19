@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf6e9" />
+    <meta
+      name="description"
+      content="王毅达的作品院子。把想法做成工具，把工具用在真实问题里。Go 游戏服务端、Agent 平台与研发工具实践。"
+    />
+    <title>王毅达 · 作品院子</title>
+    <link rel="icon" href="assets/icon-house.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="portfolio.css?v=13" />
+    <link rel="stylesheet" href="home-reference.css?v=24" />
+  </head>
+  <body class="is-home">
+    <noscript>
+      <p class="no-script-note">项目演示需要 JavaScript。你仍可查看 <a href="assets/resume-2026.pdf?v=20261019-public">PDF 简历</a>，或通过 <a href="mailto:418621207@qq.com">邮箱联系我</a>。</p>
+    </noscript>
+    <a class="skip-link" href="#content">跳到正文</a>
+    <header class="site-corner">
+      <a class="home-link" href="#" aria-label="返回作品院子"><img src="assets/icon-house.svg" alt="" /><span>作品</span></a>
+      <h1 id="home-title" class="header-name">王毅达</h1>
+      <p class="header-motto">多点想象，多点尝试，还有多点热爱。</p>
+      <nav class="personal-links" aria-label="个人链接">
+        <a class="resume-link" href="assets/resume-2026.pdf?v=20261019-public" target="_blank" rel="noopener">查看 PDF 简历<img src="assets/icon-chevron-right.svg" alt="" /></a>
+        <a class="github-link icon-link" href="https://github.com/yidayoung" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/icon-github.svg" alt="" /></a>
+        <button class="icon-link" id="contact-toggle" aria-label="联系方式" aria-expanded="false" aria-controls="contact-panel"><img src="assets/icon-envelope.svg" alt="" /></button>
+      </nav>
+      <button class="motion-toggle" id="motion-toggle" aria-label="减少动效" aria-pressed="false"><img src="assets/icon-pause.svg" alt="" /></button>
+      <div id="contact-panel" class="contact-panel" hidden><a href="mailto:418621207@qq.com">418621207@qq.com</a><span>成都</span></div>
+    </header>
+    <main id="content" tabindex="-1">
+      <div id="home-view">
+        <section class="little-more" id="a-little-more" aria-labelledby="more-title" aria-hidden="true" inert>
+          <div class="about-drawer" id="about-drawer">
+            <h2 id="more-title" tabindex="-1">想到一点，<br />就去试一点。</h2>
+            <div class="about-copy">
+              <p>比较典型的实践派。习惯从工作中的具体问题出发，想办法、做验证，再把有效的方案落到项目里。</p>
+              <p>遇到反复出现的问题，会想想能不能做个工具、改改流程，让下次更顺畅。也喜欢和同事讨论、尝试、分享。</p>
+              <p>期待一个技术氛围开放、支持探索，也重视实践的团队。给新想法留一点空间，然后一起把它做出来。</p>
+            </div>
+          </div>
+          <button id="close-about" class="back-to-yard" aria-label="收起介绍，回到工坊"><img src="assets/icon-chevron-right.svg" alt="" /></button>
+        </section>
+        <section class="home-layout reference-home" aria-labelledby="home-title">
+          <div class="scene-pan" id="scene-pan" tabindex="0" role="region" aria-label="作品工坊。左右滑动浏览场景，上下滚动展开或收起下层个人介绍。">
+            <div class="scene-stage" id="scene-stage">
+              <div class="yard-map" id="yard-map" aria-label="五个项目入口，以及秋千、花丛、Bluey 和 Bingo">
+                <img class="workshop-extended" src="assets/workshop-extended.webp" alt="" aria-hidden="true" draggable="false" />
+                <img class="workshop-background" src="assets/workshop-background.webp" alt="阳光照进海边的木作工坊，桌面与阁楼分布着五处作品" width="1928" height="815" fetchpriority="high" draggable="false" />
+                <button class="scene-project project-knot" data-project="knot"><span class="project-name">Knot</span></button>
+                <button class="scene-project project-gdlore" data-project="gdlore"><span class="project-name">gdlore</span></button>
+                <button class="scene-project project-unity" data-project="unity"><img class="project-prop" src="assets/workshop-track.webp" alt="" draggable="false" /><span class="project-name">Unity 自动测试</span></button>
+                <button class="scene-project project-ui" data-project="ui"><img class="project-prop" src="assets/workshop-ui.webp" alt="" draggable="false" /><span class="project-name">Agent 辅助 UI 生成</span></button>
+                <button class="scene-project project-go" data-project="go"><img class="project-prop" src="assets/workshop-board.webp" alt="" draggable="false" /><span class="project-name">Go 热更新</span></button>
+                <button class="scene-object swing-object" data-play="swing" aria-label="摇一摇轮胎秋千"><img src="assets/garden-swing.webp" alt="" draggable="false" /></button>
+                <button class="scene-object flowers-left" data-play="flowers" aria-label="碰一碰左侧花丛"><img src="assets/workshop-daisies.webp" alt="" draggable="false" /></button>
+                <button class="scene-object flowers-right" data-play="flowers" aria-label="碰一碰右侧花丛"><img src="assets/workshop-daisies.webp" alt="" draggable="false" /></button>
+                <div class="character-pair" aria-label="Bluey 和 Bingo">
+                  <button class="character-dancer dancer-bluey" data-dance="bluey" aria-label="让 Bluey 跳一段舞"><span class="blink-body" aria-hidden="true"></span><span class="blink-eyes" aria-hidden="true"></span><span class="dance-frame" aria-hidden="true"></span></button>
+                  <button class="character-dancer dancer-bingo" data-dance="bingo" aria-label="让 Bingo 跳一段舞"><span class="blink-body" aria-hidden="true"></span><span class="blink-eyes" aria-hidden="true"></span><span class="dance-frame" aria-hidden="true"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <p class="scene-status" id="scene-status" role="status" aria-live="polite"></p>
+      </div>
+      <article id="project-view" hidden aria-labelledby="project-title">
+        <header class="project-header">
+          <a href="#" class="back-link">← 回到院子</a
+          ><span id="project-serial"></span>
+          <nav
+            class="project-switcher"
+            aria-label="切换项目"
+            id="project-switcher"
+          ></nav>
+        </header>
+        <div class="project-intro">
+          <div>
+            <span class="eyebrow" id="project-eyebrow"></span>
+            <h1 id="project-title" tabindex="-1"></h1>
+          </div>
+          <div>
+            <p id="project-lead"></p>
+            <span class="project-state" id="project-state"></span>
+          </div>
+        </div>
+        <section class="theater" aria-label="交互原理演示">
+          <div class="stage-heading">
+            <span><span class="live-dot"></span>项目设计原理</span
+            ><span>原理示意 / 可拖动进度</span>
+          </div>
+          <div class="scene-frame" id="scene-frame"></div>
+          <div class="narrative" aria-live="polite" aria-atomic="true">
+            <span id="phase-number">01</span>
+            <div>
+              <h2 id="phase-title"></h2>
+              <p id="phase-copy"></p>
+            </div>
+            <span id="time-display">0:00</span>
+          </div>
+          <div class="playback">
+            <button id="play-toggle" class="play-button">
+              <span class="button-copy">▶ 播放演示</span></button
+            ><button id="replay" class="replay-button" aria-label="从头重播">
+              ↺ 重播</button
+            ><input
+              id="timeline"
+              type="range"
+              min="0"
+              max="1000"
+              value="0"
+              aria-label="演示进度"
+            /><label class="loop-label"
+              ><input id="loop" type="checkbox" />循环</label
+            >
+          </div>
+          <nav
+            id="phase-buttons"
+            class="phase-buttons"
+            aria-label="跳转演示阶段"
+          ></nav>
+        </section>
+        <section class="project-facts" id="project-facts"></section>
+        <aside class="project-note">
+          动画使用示例资料与状态，帮助解释机制。项目实际范围与验证状态见上方说明。
+        </aside>
+        <footer class="project-footer">
+          <a href="#" class="back-link">← 回院子，再逛一个</a
+          ><a id="next-project" href="#">下一个地方 →</a>
+        </footer>
+      </article>
+    </main>
+    <div id="iris" class="iris" aria-hidden="true" hidden>
+      <svg width="100%" height="100%">
+        <defs>
+          <mask id="iris-mask">
+            <rect width="100%" height="100%" fill="white" />
+            <circle id="iris-aperture" fill="black" />
+          </mask>
+        </defs>
+        <rect
+          width="100%"
+          height="100%"
+          fill="#17394f"
+          mask="url(#iris-mask)"
+        />
+      </svg>
+    </div>
+    <script src="gdlore-animation.js?v=10"></script>
+    <script src="unity-animation.js?v=10"></script>
+    <script src="ui-animation.js?v=11"></script>
+    <script src="portfolio.js?v=14"></script>
+    <script src="home-scene.js?v=7"></script>
+  </body>
+</html>
